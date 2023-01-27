@@ -10,8 +10,41 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        
+    <div class="container">
+
+
+        <div class="display-4 mb-2">To-do List</div>
+        <div class="h4 mb-5">Task list</div>
+
+        <div class="card mb-4">
+            <ul id="taskList" class="list-group list-group-flush">
+                <li class="list-group-item empty-list">
+                    <div class="empty-list__title">ToDo list is empty</div>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between task-item">
+                    <span class="task-title">Buy apple</span>
+                    <div class="task-item__buttons">
+                        <button type="button" data-action="done" class="btn-action">Done</button>
+                        <button type="button" data-action="delete" class="btn-action">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="card bg-light">
+            <div class="card-header">Add new task</div>
+            <div class="card-body">
+                <form id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="taskInput">
+                        <small id="emailHelp" class="form-text text-muted">What we do?</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg active">Add</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
